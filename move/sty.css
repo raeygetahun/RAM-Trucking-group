@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  height:100%;
+} 
+.moving{
+    position:fixed;
+    height:100%;
+    width:100%; 
+  }
+  .moving .moving-bg{
+    box-sizing:content-box;
+    padding-bottom: 100px;
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    background-image: url("images/truck.jpg");
+    background-size: cover; 
+    animation: moving 10s linear infinite;
+  }
+  @keyframes moving {
+    from{
+      transform:translateY(0)
+    }
+    to{
+      transform: translateY(-100px);
+    }
+  }
+  
+  .fixedd{
+    position: fixed;
+    position: relative;
+    /* left: 50%; */
+    
+    font-size: large;
+    font-family: 'Lora', serif;
+    font-size: 3.2em;
+    text-shadow: 1px 1px 1px #222;
+    text-align: center;
+    color: rgb(72, 235, 219);
+  }
